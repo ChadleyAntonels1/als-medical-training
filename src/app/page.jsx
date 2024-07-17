@@ -9,19 +9,14 @@ const Home = () => {
           <div className='grid col-span-2 lg:col-span-1'>
             <div className=' flex flex-col justify-start'>
               <div className=''>
-                <h1 className='text-[16px] md:text-[20px] mb-4'>
-                  Title
-                </h1>
-              </div>
-              <div className=''>
                 <p className='text-[12px] md:text-[14px] mb-6'>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi quidem doloribus numquam. 
-                  Debitis vero nesciunt illum dicta dolorum quidem aut nemo, soluta qui quam ex animi tempora 
-                  harum autem sequi!
+                At Medical Training's our specialized  courses in First Aid and Home-Based Care are designed to equip caregivers and First Aid staff with the knowledge and skills to provide high-quality care. 
+                Through our training, you will learn essential first aid techniques and effective communication strategies, ensuring that every individual receives the best possible care. 
+                Join us in promoting safety, healthcare, and excellence in home-based care.
                 </p>
               </div>
               <div className='mb-10'>
-                <button className=' bg-slate-600 p-2 rounded-lg'>
+                <button className=' bg-slate-600 px-3 py-1 rounded-lg text-[12px] md:text-[14px]'>
                   <Link href="/about"> More</Link>
                 </button>
               </div>
@@ -71,7 +66,7 @@ const Home = () => {
         </div>
 
         <div className=' grid col-span-3 justify-center items-center mt-10 mb-20'>
-          <button className=' bg-slate-500 p-2 rounded-lg'>
+          <button className=' bg-slate-600 px-3 py-1 rounded-lg text-[12px] md:text-[14px]'>
             <Link href='/courses' > Course</Link>
           </button>
         </div>
