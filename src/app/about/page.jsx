@@ -71,9 +71,8 @@ const About = () => {
                     </div>
                     <div>
                         <p className=' text-[12px] md:text-[14px] mb-6 text-center lg:text-left'>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Porro, blanditiis harum ipsa nemo tempora eum ipsum a natus animi
-                            velit cum deleniti ex quasi vero distinctio placeat similique reprehenderit aliquam.
+                        Hi I am Amy-Lee Antonels, the Director of ALS Medical Trianing. I Started as a volunteer at SA Red Cross Society from 1985, 
+                        became a training instructor in 2002. I am now a registered Assessor and Moderator with the Health and welfare Seta HWSETA.
                         </p>
                     </div>
                 </div>
@@ -86,45 +85,54 @@ const About = () => {
             </div>
             <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
+            <AccordionTrigger>What can I do with a home based care certificate?</AccordionTrigger>
                 <AccordionContent className='text-[12px] md:text-[14px]'>
-                    Yes. It adheres to the WAI-ARIA design pattern.
+                You are able to become a community based worker as well as take care of a patient in a private home.
                 </AccordionContent>
             </AccordionItem>
             </Accordion>
 
             <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
+            <AccordionTrigger>What qualifications do i need to do Home Based Care training?</AccordionTrigger>
                 <AccordionContent className='text-[12px] md:text-[14px]'>
-                    Yes. It adheres to the WAI-ARIA design pattern.
+                You don’t need any qualifications start with Home Based Care training level .
                 </AccordionContent>
             </AccordionItem>
             </Accordion>
 
             <Accordion type="single" collapsible>
              <AccordionItem value="item-1">
-                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                <AccordionTrigger>Is home based care a life time certificate .?</AccordionTrigger>
                  <AccordionContent className='text-[12px] md:text-[14px]'>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                 No it’s only valid for 3 years and needs to be renewed.
                  </AccordionContent>
             </AccordionItem>
             </Accordion>
 
             <Accordion type="single" collapsible>
              <AccordionItem value="item-1">
-                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                <AccordionTrigger>What is the difference between Home Based Care and First Aid?</AccordionTrigger>
+                <AccordionContent className='text-[14px] md:text-[16px]'>
+                 Home Based Care
+                 </AccordionContent>
                  <AccordionContent className='text-[12px] md:text-[14px]'>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                 Home Based Care involves providing medical and non-medical support to individuals in their homes. This type of care is often long-term and designed to help people manage chronic conditions, recover from illness or surgery, and maintain independence.
+                 </AccordionContent>
+                 <AccordionContent className='text-[14px] md:text-[16px]'>
+                 First Aid
+                 </AccordionContent>
+                 <AccordionContent className='text-[12px] md:text-[14px]'>
+                 First aid refers to the immediate and temporary care provided to an individual who has been injured or is experiencing a sudden illness until professional medical treatment can be provided. 
                  </AccordionContent>
             </AccordionItem>
             </Accordion>
 
             <Accordion type="single" collapsible>
              <AccordionItem value="item-1">
-                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                <AccordionTrigger>Why do we need to do First Aid training?</AccordionTrigger>
                  <AccordionContent className='text-[12px] md:text-[14px]'>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                 first aid empowers individuals to act confidently and effectively in emergencies, reducing the severity of injuries and potentially saving lives.
                  </AccordionContent>
             </AccordionItem>
             </Accordion>
