@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const CourseHBCCard = ({coursesHBC}) => {
   return (
@@ -7,7 +8,7 @@ const CourseHBCCard = ({coursesHBC}) => {
             <div className='flex flex-col justify-center items-center mb-5'>
               <div className=''>
                 <div>
-                  image
+                <Image src={`/${coursesHBC.url}`} width={250} height={250} alt="image" />
                 </div>
               </div>
               <div className=''>

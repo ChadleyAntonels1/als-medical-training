@@ -6,7 +6,8 @@ const coursesFa =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url: "FA1.jpg" },
 
     {id:2, 
      slug:'FA2', 
@@ -15,7 +16,8 @@ const coursesFa =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url:'FA2.jpg'},
 
     {id:3, 
      slug:'FA3', 
@@ -24,7 +26,8 @@ const coursesFa =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url:'FA3.jpg'},
 
     {id:4, 
      slug:'FACPR', 
@@ -33,7 +36,8 @@ const coursesFa =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url:'CPR.jpg'},
 ];
 
 const coursesHBC =[
@@ -44,7 +48,8 @@ const coursesHBC =[
     lesson:'......', 
     duration:'10minutes', 
     certification:'yes', 
-    prerequisite:'yes'},
+    prerequisite:'yes',
+    url:'HBCL1.jpg'},
 
     {id:2, 
      slug:'HBC2', 
@@ -53,7 +58,8 @@ const coursesHBC =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url:'HBCL2.jpg'},
 
     {id:3, 
      slug:'HBC3', 
@@ -62,7 +68,8 @@ const coursesHBC =[
      lesson:'......', 
      duration:'10minutes', 
      certification:'yes', 
-     prerequisite:'yes'},
+     prerequisite:'yes',
+     url:'HBCL3.jpg'},
 ];
 
 export const  getCoursesFa = async () => {

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -6,8 +7,8 @@ const CourseCard = ({coursesFa}) => {
     <div>
             <div className='flex flex-col justify-center items-center mb-5'>
               <div className=''>
-                <div>
-                  image
+                <div className=" ">
+                <Image src={`/${coursesFa.url}`} width={250} height={250} alt="image" className=" "/>
                 </div>
               </div>
               <div className=''>
