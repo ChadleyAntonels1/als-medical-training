@@ -133,12 +133,7 @@ const Navbar = () => {
         { open && (
 
             <motion.aside
-            initial={{ width: 1000 }}
-            animate={{
-              width: 0,
-              transition: {  duration: 2 },
-              
-            }}
+            
             exit={{
               width: 0,
               transition: { delay: 0.7, duration: 0.3 }
