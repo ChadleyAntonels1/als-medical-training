@@ -7,8 +7,8 @@ const Contact = () => {
 
   const [selectedValue, setSelectedValue] = useState('');
   const options = [
-  { value: 'Enquiry', label: 'Enquiry' },
-  { value: 'Enrollment ', label: 'Enrollment' },
+  { value: 'Enquiry', label: 'Enquiry', placeholder: 'Enquiry' },
+  { value: 'Enrollment ', label: 'Enrollment', placeholder: 'Enrollment' },
   ];
   
 //test
@@ -53,65 +53,69 @@ const Contact = () => {
   return (
     <div className='my-10 lg:my-20'>
       <div className=' flex flex-col text-center justify-center items-center mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
-        <h1 className='mb-10' >
+        <h1 className='ext-[16px] md:text-[18px] font-semibold text-center mb-10' >
           Contact
         </h1>
       </div>
 
         <div className='grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
-          <div className='grid col-span-2 lg:col-span-1 mb-10'>
-            <div className=' flex flex-col justify-center items-center gap-5 mb-5'>
-              <div className=' flex gap-24'>
-                  <Phone />
-                <h1>
+          <div className='grid col-span-2 lg:col-span-1 justify-center items-center mb-10'>
+            <div className=' mx-[0px] flex flex-col justify-start items-start gap-5 mb-5'>
+              <div className=' flex justify-start items-start gap-24'>
+                  <Phone className='' />
+                <h1 className='text-[14px] md:text-[16px] lg:text-[20px]'>
                   073 253 0961
                 </h1>
               </div>
 
-              <div className=' flex gap-5'>
+              <div className=' flex justify-start items-start gap-5'>
                   <Mail />
-                <h1>
+                <h1 className='text-[14px] md:text-[16px] lg:text-[20px]'>
                   alsmedtrain@gmail.com
                 </h1>
               </div>
 
             </div>
           </div>
-          <div className='grid col-span-2 lg:col-span-1'>
-            <div className='flex justify-center items-center mb-5'>
+          <div className='grid col-span-2  lg:col-span-1 justify-center items-center'>
+            <div className='flex flex-col justify-center items-center shadow-lg shadow-rose-300 bg-white ring-2 ring-white p-5 rounded-sm '>
               <form onSubmit={sendEmail}
                     ref={form}
-                          className='flex flex-col gap-3'>
+                    className='flex flex-col gap-3'>
                         <input type="text" 
                                placeholder='Fullname'
                                name='user_name'
+                               className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
                                required/>
 
                         <input type="text" 
                                placeholder='Email'
                                name='user_email'
+                               className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
                                required/>
 
                         <select value={selectedValue}
                                 onChange={(e) => setSelectedValue(e.target.value)}
-                                className='text-black'
                                 name='reason'
+                                className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 shadow-inner-xl shadow-blacks ring-rose-200 focus:outline-rose-200 p-1 rounded-sm text-rose-200'
                                 required>
 
                             {options.map((option) => (
-                              <option key={option.value} value={option.value} >
-                                {option.label}
+                              <option key={option.value}
+                                      value={option.value}
+                                      className='text-black' >
+                                {option.value}
                               </option>
                             ))}
-                        </select>
+                        </select> 
                         <textarea type="text"  
                                   name="user_message" 
                                   placeholder='Message'
-                                  className='text-black'
                                   rows={8}
+                                  className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 shadow-inner-xl shadow-blacks ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
                                   required/>
 {/* first Aid checkbox */}
-                        <h1 className='text-[14px] lg:text-[18px]'> First Aid courses</h1>
+                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px]'> First Aid courses</h1>
                         <div className='grid grid-cols-2 gap-2'>
                           <div className='grid col-span-2 lg:col-span-1'>
 
@@ -121,7 +125,7 @@ const Contact = () => {
                                       id='level1'
                                       name='level1_FA'
                                       value='First Aid Level 1'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400  '/>
                               </div>
                               <div>
                                 <label htmlFor="level1"> 
@@ -138,7 +142,7 @@ const Contact = () => {
                                       id='level2'
                                       name='level2_FA'
                                       value='First Aid Level 2'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400 '/>
                               </div>
                               <div>
                                 <label htmlFor="level2"> 
@@ -158,7 +162,7 @@ const Contact = () => {
                                       id='level3'
                                       name='level3_FA'
                                       value='First Aid Level 3'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400'/>
                               </div>
                               <div>
                                 <label htmlFor="level3"> 
@@ -176,7 +180,7 @@ const Contact = () => {
                                       id='cpr_FA'
                                       name='cpr'
                                       value='CPR Family and Friends'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400'/>
                               </div>
                               <div>
                                 <label htmlFor="cpr"> 
@@ -188,10 +192,10 @@ const Contact = () => {
                         </div>
 
 {/* Home Based Care checkbox */}
-                        <h1 className='text-[14px] lg:text-[18px] pt-4'> Home Based Care courses</h1>
+                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] pt-4'> Home Based Care courses</h1>
                         <div className='grid grid-cols-2 gap-2'>
 {/*test*/}
-                          {/* <div className=''>
+                          {/* <div className='accent-rose-200 hover:accent-rose-400'>
                                   {coursesFA.map((coursesFA) => (
                                       <label key={coursesFA}
                                              className='grid col-span-2 lg:col-span-1'>
@@ -214,7 +218,7 @@ const Contact = () => {
                                       id='level1HBC'
                                       name='level1_HBC'
                                       value='Home Based Care Level 1'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400'/>
                               </div>
                               <div>
                                 <label htmlFor="level1HBC"> 
@@ -231,7 +235,7 @@ const Contact = () => {
                                       id='level2HBC'
                                       name='level2_HBC'
                                       value='Home Based Care Level 2'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400'/>
                               </div>
                               <div>
                                 <label htmlFor="level2HBC"> 
@@ -251,7 +255,7 @@ const Contact = () => {
                                       id='level3HBC'
                                       name='level3_HBC'
                                       value='Home Based Care Level 3'
-                                      className=''/>
+                                      className='accent-rose-200 hover:accent-rose-400'/>
                               </div>
                               <div>
                                 <label htmlFor="level3HBC"> 
@@ -264,11 +268,11 @@ const Contact = () => {
 
                         
                         
-                        <button>
+                        <button className='flex justify-center items-center shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 py-2 rounded-sm'>
                             submit
                         </button>
                         {success && (
-                        <span className='text-white text-[10px] lg:text-[12px] font-semibold'>
+                        <span className='text-black text-[10px] lg:text-[12px] font-semibold'>
                            Your message was sent successfully!
                         </span>
                       )}

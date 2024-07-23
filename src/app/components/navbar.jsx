@@ -46,7 +46,7 @@ const Navbar = () => {
         },
         opened:{
             rotate:45,
-            backgroundColor:'rgb(255,255,255,255)'
+            backgroundColor:'fffff'
         }
     }
 
@@ -62,10 +62,11 @@ const Navbar = () => {
     const bottomVarients={
         closed:{
             rotate:0,
+            
         },
         opened:{
             rotate:-45,
-            backgroundColor:'rgb(255,255,255,255)'
+            backgroundColor:'fffff'
         }
     }
 
@@ -94,16 +95,15 @@ const Navbar = () => {
     <div  className="h-full flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md ">
         {/* LOGO */}
         <div className=' lg:flex justify-start'> 
-            <Link href='/' className=' text-white font-semibold flex items-center justify-center'>
+            <Link href='/' className=' text-black font-semibold flex items-center justify-center'>
                 <div className=' text-[20px]'>
-                              {/* <Image src='' width={150} height={50} alt="RFF"/> */}
-                              ALS Medical
+                              <Image src='/alslogo.png' width={150} height={50} alt="ALS Medical"/>
 
                 </div>
             </Link>
         </div>
         {/* NAVIGATION LINKS */}
-        <div className="hidden lg:flex gap-20 text-white" >
+        <div className="hidden lg:flex gap-20 text-black" >
             {links.map(link=>(
                 <NavLink link={link} key={link.title}/>
             ))}
@@ -115,16 +115,16 @@ const Navbar = () => {
         <button className='w-10 h-8 flex flex-col justify-between z-50 relative' onClick={(()=>setOpen((!open)))}>
             <motion.div variants={topVarients} 
                         animate={open ? "opened" : "closed"} 
-                        className='w-10 h-1 bg-white rounded-xl origin-left'>
+                        className='w-10 h-1 bg-black rounded-xl origin-left'>
 
             </motion.div>
             <motion.div variants={centerVarients} 
                         animate={open ? "opened" : "closed"} 
-                        className='w-10 h-1 bg-white rounded-xl'>
+                        className='w-10 h-1 bg-black rounded-xl'>
             </motion.div>
             <motion.div variants={bottomVarients} 
                         animate={open ? "opened" : "closed"} 
-                        className='w-10 h-1 bg-white rounded-xl origin-left'>
+                        className='w-10 h-1 bg-black rounded-xl origin-left'>
             </motion.div>
         </button>
         {/* Menu List */}
@@ -146,7 +146,7 @@ const Navbar = () => {
               exit="closed"
               variants={sideVariants}
             >
-            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-full bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl'>
+            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-full bg-rose-300 text-black flex flex-col items-center justify-center gap-8 text-4xl'>
                 {links.map(link=>(
                     <motion.a
                     whileHover={{ scale: 1.1 }}

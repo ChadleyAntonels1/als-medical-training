@@ -45,7 +45,7 @@ const singlePostPageFa = async ({params}) => {
         </div>
         
         <Link href='/contact'> 
-           <button className='bg-slate-400 px-3 py-2 rounded-lg text-[12px] lg:text-[14px]'>
+           <button className='shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 px-3 py-1 rounded-lg text-[12px] md:text-[14px]'>
             Get Quote
            </button>
         </Link>

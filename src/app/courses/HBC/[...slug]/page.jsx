@@ -10,7 +10,10 @@ const singlePostPageHBC = async ({params}) => {
 
   return (
     <div className='mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20 mt-10 mb-10'>
-
+        <div className='flex justify-center mb-10' key={coursesHBC.course}>
+            {coursesHBC.course}
+        </div>
+        
         <div className='flex flex-col justify-start mb-5'>
            <h1 className='text-[14px] lg:text-[16px] font-semibold mb-2 ' >Course Description</h1>
            <p className='text-[12px] lg:text-[14px]' key={coursesHBC.description}>{coursesHBC.description}</p> 
@@ -37,7 +40,7 @@ const singlePostPageHBC = async ({params}) => {
         </div>
 
         <Link href='/contact'> 
-           <button className='bg-slate-400 px-3 py-2 rounded-lg text-[12px] lg:text-[14px]'>
+           <button className='shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 px-3 py-1 rounded-lg text-[12px] md:text-[14px]'>
             Get Quote
            </button>
         </Link>
