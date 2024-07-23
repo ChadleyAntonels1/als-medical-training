@@ -46,7 +46,7 @@ const Navbar = () => {
         },
         opened:{
             rotate:45,
-            backgroundColor:'fffff'
+            backgroundColor:'rgb(0, 0, 0)'
         }
     }
 
@@ -66,7 +66,7 @@ const Navbar = () => {
         },
         opened:{
             rotate:-45,
-            backgroundColor:'fffff'
+            backgroundColor:'rgb(0, 0, 0)'
         }
     }
 
