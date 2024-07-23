@@ -18,6 +18,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'LOGO1': 'FAB8BA',
+
+        value:'FAB8BA',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
