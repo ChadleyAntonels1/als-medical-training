@@ -129,40 +129,7 @@ const Navbar = () => {
         </button>
         {/* Menu List */}
 
-        <AnimatePresence>
-        { open && (
-
-            <motion.aside
-            
-            exit={{
-              width: 0,
-              transition: { delay: 0.7, duration: 0.3 }
-            }}
-          >
-            <motion.div
-              className="container"
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={sideVariants}
-            >
-            <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-full bg-rose-300 text-black flex flex-col items-center justify-center gap-8 text-4xl'>
-                {links.map(link=>(
-                    <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    variants={itemVariants}
-                    key={link.title}
-                  >
-                    <Link onClick={()=> setOpen(false)} href={link.url} key={link.title}>
-                        <NavLink link={link} key={link.title}/>
-                    </Link>
-                    </motion.a>
-                ))}
-            </div>
-            </motion.div>
-            </motion.aside>
-                  )}
-            </AnimatePresence>
+        
 
         </div>
 
