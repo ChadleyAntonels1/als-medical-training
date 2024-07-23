@@ -16,7 +16,7 @@ const Home = () => {
           <div className=' grid col-span-2 lg:col-span-1'>
             <div className=' flex flex-col justify-start items-center'>
                 <p className='text-[12px] lg:text-[14px] max-w-[500px] py-16'>
-                At Medical Training's our specialized  courses in First Aid and Home-Based Care are designed to equip caregivers and First Aid staff with the knowledge and skills to provide high-quality care. 
+                At Medical Training&apos;s our specialized  courses in First Aid and Home-Based Care are designed to equip caregivers and First Aid staff with the knowledge and skills to provide high-quality care. 
                 Through our training, you will learn essential first aid techniques and effective communication strategies, ensu that every individual receives the best possible care. 
                 Join us in promoting safety, healthcare, and excellence in home-based care.
                 </p>

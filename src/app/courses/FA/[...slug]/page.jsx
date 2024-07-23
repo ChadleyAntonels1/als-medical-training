@@ -25,7 +25,7 @@ const singlePostPageFa = async ({params}) => {
         </div>
 
         <div className='flex flex-col justify-start mb-5'>
-            <h1 className='text-[14px] lg:text-[16px] font-semibold mb-2'>What you`&apos;`ll Learn</h1>
+            <h1 className='text-[14px] lg:text-[16px] font-semibold mb-2'>What you&apos;ll Learn</h1>
             <p className='text-[12px] lg:text-[14px]'  key={coursesFa.lesson}>{coursesFa.lesson}</p>
         </div>
 
