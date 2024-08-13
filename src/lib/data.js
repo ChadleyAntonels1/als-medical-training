@@ -3,9 +3,9 @@ const coursesFa =[
      slug:'FA1', 
      course:'First Aid Level 1', 
      description:'First Aid Level 1 is an introductory course designed to provide individuals with the basic skills and knowledge to handle common medical emergencies.',
-     lesson:'......', 
-     duration:'10minutes', 
-     certification:'yes', 
+     lesson:'First Aid Level 1 training equips individuals with essential life-saving skills for both workplace and public settings. The curriculum covers a wide range of trauma and medical emergencies, including CPR, choking management, bleeding control, and treatment of burns and shock. Participants also learn to respond to heart attacks, strokes, hypo/hyperthermia, diabetes, epilepsy, and other causes of unconsciousness. Additionally, the course teaches how to manage fractures and apply splinting, ensuring that trainees are prepared to handle various emergency situations effectively.', 
+     duration:'20 hours', 
+     certification:'First Aid Level 1 HPCSA accredited certificate, The certificate is valid for 3 years', 
      prerequisite:'No prior qualification is needed for this course',
      url: "FA1.jpg" },
 
