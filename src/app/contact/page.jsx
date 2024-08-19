@@ -53,39 +53,39 @@ const Contact = () => {
   return (
     <div className='my-10 lg:my-20'>
       <div className=' flex flex-col text-center justify-center items-center mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
-        <h1 className='ext-[16px] md:text-[18px] font-semibold text-center mb-10' >
+        <h1 className='text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-10' >
           Contact
         </h1>
       </div>
 
         <div className='grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
           <div className='grid col-span-2 lg:col-span-1 justify-center items-center mb-10'>
-            <div className=' mx-[0px] flex flex-col justify-start items-start gap-5 mb-5'>
-              <div className=' flex justify-start items-start gap-24'>
+            <div className=' mx-[0px] flex flex-col justify-start items-between gap-5 mb-5'>
+              <div className=' flex justify-between items-center '>
                   <Phone className='' />
-                <h1 className='text-[14px] md:text-[16px] lg:text-[20px]'>
+                <h1 className='text-[14px] font-quattrocento-sans-regular md:text-[16px] lg:text-[20px]'>
                   073 253 0961
                 </h1>
               </div>
 
-              <div className=' flex justify-start items-start gap-5'>
+              <div className=' flex justify-between items-center gap-8  '>
                   <Mail />
-                <h1 className='text-[14px] md:text-[16px] lg:text-[20px]'>
+                <h1 className='text-[14px] font-quattrocento-sans-regular md:text-[16px] lg:text-[20px]'>
                   alsmedtrain@gmail.com
                 </h1>
               </div>
 
             </div>
           </div>
-          <div className='grid col-span-2  lg:col-span-1 justify-center items-center'>
+          <div className='grid col-span-2  lg:col-span-1 justify-center items-center mb-10'>
             <div className='flex flex-col justify-center items-center shadow-lg shadow-rose-300 bg-white ring-2 ring-white p-5 rounded-sm '>
               <form onSubmit={sendEmail}
                     ref={form}
-                    className='flex flex-col gap-3'>
+                    className='flex flex-col gap-3 font-quattrocento-sans-regular'>
                         <input type="text" 
                                placeholder='Fullname'
                                name='user_name'
-                               className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
+                               className='ring-1 shadow-[inset_0px_0px_3px_3px]  shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
                                required/>
 
                         <input type="text" 
@@ -115,7 +115,7 @@ const Contact = () => {
                                   className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 shadow-inner-xl shadow-blacks ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
                                   required/>
 {/* first Aid checkbox */}
-                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px]'> First Aid courses</h1>
+                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular'> First Aid courses</h1>
                         <div className='grid grid-cols-2 gap-2'>
                           <div className='grid col-span-2 lg:col-span-1'>
 
@@ -192,7 +192,7 @@ const Contact = () => {
                         </div>
 
 {/* Home Based Care checkbox */}
-                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] pt-4'> Home Based Care courses</h1>
+                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular pt-4'> Home Based Care courses</h1>
                         <div className='grid grid-cols-2 gap-2'>
 {/*test*/}
                           {/* <div className='accent-rose-200 hover:accent-rose-400'>
@@ -269,7 +269,7 @@ const Contact = () => {
                         
                         
                         <button className='flex justify-center items-center shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 py-2 rounded-sm'>
-                            submit
+                            Submit
                         </button>
                         {success && (
                         <span className='text-black text-[10px] lg:text-[12px] font-semibold'>

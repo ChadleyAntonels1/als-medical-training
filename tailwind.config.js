@@ -9,6 +9,13 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily:{
+      'quattrocento-regular': ['Quattrocento', 'normal', 'serif'],
+      'quattrocento-sans-regular': ['Quattrocento Sans', 'normal', 'sans-serif'],
+      'quattrocento-sans-regular': ['Quattrocento Sans', 'normal', 'sans-serif'],
+
+
+    },
     container: {
       center: true,
       padding: "2rem",

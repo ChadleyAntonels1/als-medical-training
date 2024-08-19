@@ -2,7 +2,28 @@
   @tailwind components;
   @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+
   @layer base {
+      .quattrocento-regular {
+        font-family: "Quattrocento", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .quattrocento-sans-regular {
+        font-family: "Quattrocento Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .quattrocento-sans-regular-italic {
+        font-family: "Quattrocento Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+    
     :root {
       --background: 0 0% 100%;
       --foreground: 222.2 84% 4.9%;

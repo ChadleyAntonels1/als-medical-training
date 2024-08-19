@@ -12,12 +12,12 @@ const Courses = async () => {
 
   return (
     <div className='my-10 lg:my-20'>
-        <h1 className='text-[16px] md:text-[18px] font-semibold text-center mb-10'>
+        <h1 className='text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-10'>
           Courses
         </h1>
       <div className='bg-white font-medium w-full my-10'>
       <div className=' flex flex-col text-center justify-center items-center mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
-        <p className='text-[12px] md:text-[14px] font-medium p-16'>
+        <p className='text-[12px] md:text-[14px] font-quattrocento-sans-regular font-medium p-16'>
         we offer comprehensive courses in First Aid and Home-Based Care. 
         Our programs are designed to equip you with essential skills to provide effective care and attend to patients. 
         Join us to gain the knowledge and confidence needed to ensure the safety and well-being of patients. </p>
@@ -25,7 +25,7 @@ const Courses = async () => {
       </div>
 
       <div className='mb-10'>
-        <h1 className='flex justify-center items-center font-semibold mb-10 text-[16px] md:text-[20px]'>
+        <h1 className='flex justify-center items-center font-quattrocento-regular font-semibold mb-10 text-[20px] md:text-[24px]'>
           First Aid
         </h1>
 
@@ -39,8 +39,8 @@ const Courses = async () => {
       </div>
 
         <div className='mb-10'>
-          <h1 className='flex justify-center items-center font-semibold mb-10 text-[16px] md:text-[20px]'>
-            Home Based Care Level
+          <h1 className='flex justify-center items-center font-quattrocento-regular font-semibold mb-10 text-[20px] md:text-[24px]'>
+            Home Based Care
           </h1>
               
           <div className='grid grid-flow-row grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20' >

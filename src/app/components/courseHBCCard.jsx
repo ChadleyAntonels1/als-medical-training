@@ -12,13 +12,13 @@ const CourseHBCCard = ({coursesHBC}) => {
                 </div>
               </div>
               <div className=''>
-                <h1 className='my-5'>
+                <h1 className='my-5 font-quattrocento-sans-regular text-[12px] md:text-[16px] lg:text-[18px]'>
                     {coursesHBC.course}
                 </h1>
               </div>
               <div >
               <Link href={`/courses/HBC/${coursesHBC.slug}`}>
-                    <button className='shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 px-3 py-1 rounded-lg text-[12px] md:text-[14px]'>
+                    <button className='shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 px-3 py-1 rounded-lg font-quattrocento-sans-regular font-medium text-[14px] md:text-[16px]'>
                      View
                     </button>
                 </Link>
