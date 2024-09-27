@@ -92,7 +92,7 @@ const Navbar = () => {
       };
 
   return (
-    <div  className="h-full flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md ">
+    <div  className="h-full bg-white flex items-center justify-between px-5 lg:px-8 xl:px-14 text-md ">
         {/* LOGO */}
         <div className=' lg:flex justify-start'> 
             <Link href='/' className=' text-black font-semibold flex items-center justify-center'>
@@ -143,7 +143,6 @@ const Navbar = () => {
               className="container"
               initial="closed"
               animate="open"
-              exit="closed"
               variants={sideVariants}
             >
             <div id='nav' className='absolute z-10 top-0 left-0 w-screen h-full bg-rose-300 text-black flex flex-col items-center justify-center gap-8 text-4xl'>

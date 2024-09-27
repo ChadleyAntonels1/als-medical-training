@@ -58,8 +58,8 @@ const Contact = () => {
         </h1>
       </div>
 
-        <div className='grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
-          <div className='grid col-span-2 lg:col-span-1 justify-center items-center mb-10'>
+        <div className=' bg-white ring-2 ring-white rounded-sm grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-40'>
+          <div className='grid col-span-2 lg:col-span-1 justify-center items-center my-6 lg:my-0'>
             <div className=' mx-[0px] flex flex-col justify-start items-between gap-5 mb-5'>
               <div className=' flex justify-between items-center '>
                   <Phone className='' />
@@ -77,27 +77,27 @@ const Contact = () => {
 
             </div>
           </div>
-          <div className='grid col-span-2  lg:col-span-1 justify-center items-center mb-10'>
-            <div className='flex flex-col justify-center items-center shadow-lg shadow-rose-300 bg-white ring-2 ring-white p-5 rounded-sm '>
+          <div className=' grid col-span-2 lg:col-span-1 items-center'>
+            <div className='flex flex-col justify-center items-center shadow-lg bg-gray-200 ring-2 ring-white p-5 rounded-sm w-full min-w-[100px]'>
               <form onSubmit={sendEmail}
                     ref={form}
-                    className='flex flex-col gap-3 font-quattrocento-sans-regular'>
+                    className='flex flex-col  gap-3 font-quattrocento-sans-regular'>
                         <input type="text" 
                                placeholder='Fullname'
                                name='user_name'
-                               className='ring-1 shadow-[inset_0px_0px_3px_3px]  shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
+                               className='ring-1 min-w-[203px] sm:w-[300px] md:w-[400px] lg:w-[320px] xl:w-[450px] ring-black focus:outline-none p-1 rounded-sm text-black placeholder-black'
                                required/>
 
                         <input type="text" 
                                placeholder='Email'
                                name='user_email'
-                               className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
+                               className='ring-1 min-w-[203px] sm:w-[300px] md:w-[400px] lg:w-[320px]  xl:w-[450px] ring-black focus:outline-none p-1 rounded-sm text-black placeholder-black'
                                required/>
 
                         <select value={selectedValue}
                                 onChange={(e) => setSelectedValue(e.target.value)}
                                 name='reason'
-                                className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 shadow-inner-xl shadow-blacks ring-rose-200 focus:outline-rose-200 p-1 rounded-sm text-rose-200'
+                                className='ring-1 min-w-[203px] sm:w-[300px] md:w-[400px] lg:w-[320px]  xl:w-[450px] shadow-inner-xl shadow-blacks ring-black p-1 rounded-sm text-black'
                                 required>
 
                             {options.map((option) => (
@@ -112,14 +112,16 @@ const Contact = () => {
                                   name="user_message" 
                                   placeholder='Message'
                                   rows={8}
-                                  className='ring-1 shadow-[inset_0px_0px_3px_3px] shadow-rose-100 shadow-inner-xl shadow-blacks ring-rose-200 focus:outline-none p-1 rounded-sm text-black placeholder-rose-200'
+                                  className='ring-1 min-w-[203px] sm:w-[300px] md:w-[400px] lg:w-[320px]  xl:w-[450px] shadow-inner-xl shadow-blacks ring-black focus:outline-none p-1 rounded-sm text-black placeholder-black'
                                   required/>
 {/* first Aid checkbox */}
-                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular'> First Aid courses</h1>
-                        <div className='grid grid-cols-2 gap-2'>
+                        <h1 className='text-rose-300 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular'> 
+                          First Aid courses
+                        </h1>
+                        <div className='grid grid-cols-2 gap-2 '>
                           <div className='grid col-span-2 lg:col-span-1'>
 
-                            <div className='flex gap-2 text-[12px] md:text-[14px]'>
+                            <div className='flex gap-2 text-[12px] md:text-[14px] '>
                               <div >
                                 <input type="checkbox"
                                       id='level1'
@@ -192,7 +194,9 @@ const Contact = () => {
                         </div>
 
 {/* Home Based Care checkbox */}
-                        <h1 className='text-rose-200 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular pt-4'> Home Based Care courses</h1>
+                        <h1 className='text-rose-300 font-semibold text-[14px] lg:text-[18px] font-quattrocento-regular pt-4'> 
+                          Home Based Care courses
+                        </h1>
                         <div className='grid grid-cols-2 gap-2'>
 {/*test*/}
                           {/* <div className='accent-rose-200 hover:accent-rose-400'>
@@ -268,7 +272,7 @@ const Contact = () => {
 
                         
                         
-                        <button className='flex justify-center items-center shadow-[inset_0px_0px_3px_3px] shadow-rose-200/80 bg-rose-300 py-2 rounded-sm'>
+                        <button className='flex justify-center items-center bg-rose-300 ring-2 ring-white py-2 rounded-sm'>
                             Submit
                         </button>
                         {success && (

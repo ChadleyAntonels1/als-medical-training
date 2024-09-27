@@ -14,12 +14,12 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={inter.className}>
-        <div className="w-full h-max bg-rose-200 text-black">
+        <div className="w-full h-max bg-LOGO1 text-black">
           <div className="h-20 ">
           <Navbar />
           </div>
           <div className="w-[calc{100vh-6rem}]  ">
-          {children}
+            {children}
           <Analytics/>
           </div>
           <div >

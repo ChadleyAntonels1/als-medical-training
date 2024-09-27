@@ -15,8 +15,8 @@ const Courses = async () => {
         <h1 className='text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-10'>
           Courses
         </h1>
-      <div className='bg-white font-medium w-full my-10'>
-      <div className=' flex flex-col text-center justify-center items-center mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20'>
+      <div className=' font-medium  my-10'>
+      <div className=' bg-white/70 ring-2 rounded-sm ring-white flex flex-col text-center justify-center items-center mx-10 sm:mx-12 md:mx-14 lg:mx-40'>
         <p className='text-[12px] md:text-[14px] font-quattrocento-sans-regular font-medium p-16'>
         we offer comprehensive courses in First Aid and Home-Based Care. 
         Our programs are designed to equip you with essential skills to provide effective care and attend to patients. 
@@ -29,7 +29,7 @@ const Courses = async () => {
           First Aid
         </h1>
 
-        <div className='grid grid-flow-row grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20' >
+        <div className='grid grid-flow-row grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-40' >
           {coursesFa.map((courseFa) => (
             <div className=' grid col-span-2 lg:col-span-1' key={courseFa.slug} >
               <CourseCard coursesFa={courseFa} />
@@ -43,7 +43,7 @@ const Courses = async () => {
             Home Based Care
           </h1>
               
-          <div className='grid grid-flow-row grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20' >
+          <div className='grid grid-flow-row grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-40' >
             {coursesHBC.map((courseHBC) => (
               <div className=' grid col-span-2 lg:col-span-1' key={courseHBC.slug} >
                 <CourseHBCCard coursesHBC={courseHBC} />
