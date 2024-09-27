@@ -1,5 +1,6 @@
 import { Facebook, Phone  } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -22,9 +23,9 @@ const Footer = () => {
           </div>
           <div>
             <button>
-              <a target='_blank' href="">
+              <Link href="/contact">
                <Phone  className= 'ring-rose-200 text-white bg-rose-200 ring-1 rounded-3xl p-[4px] w-7 h-7'/>
-              </a>
+              </Link>
                </button>
           </div>
          </div>

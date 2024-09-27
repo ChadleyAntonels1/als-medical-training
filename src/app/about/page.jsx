@@ -6,7 +6,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='my-10 lg:my-20 font-medium'>
-        <div className='mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20 mb-10'>
+        <div className='mx-10 sm:mx-12 md:mx-14 lg:mx-40 mb-10'>
             <div className='text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-10'>
                 <h1>About</h1>
             </div>
@@ -32,7 +32,7 @@ const About = () => {
             </div>
         </div>
 
-        <div className='gap-5 grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20 mb-10'>
+        <div className='gap-5 grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-40 mb-10'>
             <div className=' bg-white/70 ring-2 ring-white p-5 rounded-sm grid justify-start items-start col-span-2 lg:col-span-1 px-4 '>
                 <div className=' flex flex-col justify-center items-center lg:items-start mb-10 lg:mb-0'>
                         <h1 className='text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-4'>
@@ -55,7 +55,7 @@ const About = () => {
             </div>
         </div>
 
-        <div className='bg-white/70 ring-2 ring-white rounded-sm grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20 mb-10'>
+        <div className='bg-white/70 ring-2 ring-white rounded-sm grid grid-cols-2 mx-10 sm:mx-12 md:mx-14 lg:mx-40 mb-10'>
             <div className='grid col-span-2 lg:col-span-1'>
                 <h1 className='lg:hidden text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-4'>
                     About Amy
@@ -84,7 +84,7 @@ const About = () => {
             </div>
         </div>
 
-        <div className='mx-10 sm:mx-12 md:mx-14 lg:mx-16 xl:mx-20 text-[12px] md:text-[14px] '>
+        <div className='mx-10 sm:mx-12 md:mx-14 lg:mx-40 text-[12px] md:text-[14px] '>
             <div className='flex justify-center text-[20px] md:text-[24px] font-quattrocento-regular font-semibold text-center mb-10'>
                 FAQ
             </div>
